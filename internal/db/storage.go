@@ -106,7 +106,7 @@ func (r *Storage) GetOrderByID(id string) (model.Order, error) {
 
 }
 
-func (r *Storage) GetAllOrders(id string) ([]model.Order, error) {
+func (r *Storage) GetAllOrders() ([]model.Order, error) {
 	orders := []model.Order{}
 
 	// 1. Берём все заказы

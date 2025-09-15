@@ -9,7 +9,7 @@ type Order struct {
 
 	Delivery Delivery `json:"delivery"`
 	Payment  Payment  `json:"payment"`
-	Item     []Item   `json:"items"`
+	Items    []Item   `json:"items"`
 }
 
 type Delivery struct {
@@ -19,9 +19,9 @@ type Delivery struct {
 }
 
 type Payment struct {
-	Transaction string `json:"transaction"`
-	Currency    string `json:"currency"`
-	Amount      string `json:"amount"`
+	Transaction string  `json:"transaction"`
+	Currency    string  `json:"currency"`
+	Amount      float64 `json:"amount"`
 }
 
 type Item struct {
