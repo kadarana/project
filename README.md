@@ -1,4 +1,4 @@
-# project
+# Order service
 
 - Сервис на Go для демонстрации работы с заказами
 - Подписка на канал orders в NATS Streaming
